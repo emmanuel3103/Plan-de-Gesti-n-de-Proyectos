@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plan de Gestión de Proyecto — Sistema EDI-301</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1.5rem 3rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    h1, h2, h3, h4 {
+      color: #222;
+    }
+    nav {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    nav h2 {
+      margin-top: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 0.3rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    ul, ol {
+      margin-top: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+    /* Estilo de tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Plan de Gestión de Proyecto — Sistema EDI-301</h1>
+  <p>Equipo de desarrollo EDI-301 — Universidad Linda Vista</p>
+</header>
+
+<nav>
+  <h2>Índice</h2>
+  <ul>
+    <li><a href="#sec1">1. Resumen ejecutivo</a></li>
+    <li><a href="#sec2">2. Declaración del proyecto</a></li>
+    <li><a href="#sec3">3. Alcance del proyecto</a>
+      <ul>
+        <li><a href="#sec3-1">3.1 Objetivos del proyecto</a></li>
+        <li><a href="#sec3-2">3.2 Productos del proyecto</a></li>
+        <li><a href="#sec3-3">3.3 Exclusiones</a></li>
+      </ul>
+    </li>
+    <li><a href="#sec4">4. Presupuesto del proyecto</a></li>
+    <li><a href="#sec5">5. Equipo del proyecto</a></li>
+    <li><a href="#sec6">6. Cronograma del proyecto</a></li>
+    <li><a href="#sec7">7. Plan de comunicación</a></li>
+    <li><a href="#sec8">8. Plan de gestión de riesgos</a></li>
+    <li><a href="#sec9">9. Plan de seguimiento y control</a></li>
+    <li><a href="#sec10">10. Aprobación del proyecto</a></li>
+  </ul>
+</nav>
+
+<section id="sec1">
+  <h2>1. Resumen ejecutivo</h2>
+  <p>
+    El presente Plan de Gestión del Proyecto describe el enfoque, los recursos, el cronograma, los roles,
+    los riesgos y el proceso de seguimiento utilizados para la construcción del sistema
+    <strong>EDI-301</strong>, una aplicación móvil destinada a apoyar la administración del programa
+    institucional de Equipos de Desarrollo Integral (EDI) de la Universidad Linda Vista.
+  </p>
+  <p>
+    Este documento establece la planificación formal del proyecto, los mecanismos de control, los
+    entregables principales, el equipo participante y los procesos de comunicación. Su objetivo es
+    garantizar una administración eficiente del proyecto, asegurar el cumplimiento de los requisitos y
+    proporcionar una base clara para la toma de decisiones durante el ciclo de vida del desarrollo.
+  </p>
+</section>
+
+<section id="sec2">
+  <h2>2. Declaración del proyecto</h2>
+  <p>
+    El proyecto <strong>EDI-301</strong> consiste en el desarrollo de una aplicación móvil
+    multiplataforma (Android/iOS) utilizando Flutter, conectada a un backend REST en Node.js/Express
+    y con base de datos SQL Server. La aplicación permitirá gestionar familias EDI, visualizar eventos,
+    compartir publicaciones, administrar perfiles y fortalecer la comunicación con estudiantes y
+    colaboradores.
+  </p>
+  <p>
+    El objetivo principal es digitalizar procesos actualmente manuales, reducir la carga administrativa
+    del coordinador del programa y mejorar la experiencia de los estudiantes dentro de las familias EDI.
+  </p>
+</section>
+
+<section id="sec3">
+  <h2>3. Alcance del proyecto</h2>
+
+  <section id="sec3-1">
+    <h3>3.1 Objetivos del proyecto</h3>
+    <ul>
+      <li>Diseñar e implementar una aplicación móvil funcional para los usuarios del programa.</li>
+      <li>Desarrollar un backend seguro y escalable.</li>
+      <li>Integrar un sistema de autenticación seguro basado en JWT.</li>
+      <li>Ofrecer módulos claros: familias, eventos, publicaciones, perfil y notificaciones.</li>
+      <li>Proporcionar interfaces intuitivas y de fácil uso.</li>
+      <li>Entregar documentación técnica, de pruebas, arquitectura y manuales de usuario.</li>
+    </ul>
+  </section>
+
+  <section id="sec3-2">
+    <h3>3.2 Productos del proyecto</h3>
+    <ul>
+      <li>Aplicación móvil EDI-301 (APK y build iOS).</li>
+      <li>API REST funcional.</li>
+      <li>Base de datos SQL Server estructurada y documentada.</li>
+      <li>Paquete de pruebas funcionales y reporte de resultados.</li>
+      <li>Manual de Usuario y Manual de Mantenimiento.</li>
+      <li>Documentos de Arquitectura, Diseño Detallado y Gestión de Configuración.</li>
+      <li>Plan de capacitación básico para el administrador del programa.</li>
+    </ul>
+  </section>
+
+  <section id="sec3-3">
+    <h3>3.3 Exclusiones</h3>
+    <ul>
+      <li>Integraciones con sistemas institucionales no autorizados.</li>
+      <li>Implementación de módulos no contemplados (mensajería interna avanzada, videollamadas, etc.).</li>
+      <li>Desarrollo de una versión web completa del sistema.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="sec4">
+  <h2>4. Presupuesto del proyecto</h2>
+  <p>
+    Como proyecto académico y de implementación institucional, no existen costos de contratación externa.
+    Sin embargo, se consideran recursos estimados en términos de horas de trabajo del equipo.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Actividad principal</th>
+        <th>Horas estimadas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Análisis y levantamiento de requerimientos</td>
+        <td>25 h</td>
+      </tr>
+      <tr>
+        <td>Arquitectura y diseño técnico</td>
+        <td>20 h</td>
+      </tr>
+      <tr>
+        <td>Desarrollo frontend (Flutter)</td>
+        <td>60 h</td>
+      </tr>
+      <tr>
+        <td>Desarrollo backend (Node.js + SQL Server)</td>
+        <td>55 h</td>
+      </tr>
+      <tr>
+        <td>Pruebas y aseguramiento de calidad</td>
+        <td>30 h</td>
+      </tr>
+      <tr>
+        <td>Documentación</td>
+        <td>20 h</td>
+      </tr>
+      <tr>
+        <td>Despliegue y capacitación</td>
+        <td>10 h</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total aproximado de esfuerzo</th>
+        <th>220 h</th>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<section id="sec5">
+  <h2>5. Equipo del proyecto</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Rol</th>
+        <th>Responsable</th>
+        <th>Responsabilidades</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Coordinador del proyecto</td>
+        <td>Capellanía ULV</td>
+        <td>Aprobación de fases, definición de prioridades, validación del producto final.</td>
+      </tr>
+      <tr>
+        <td>Administrador del proyecto</td>
+        <td>Estudiante desarrollador</td>
+        <td>Planificación, seguimiento del cronograma, elaboración de reportes de avance.</td>
+      </tr>
+      <tr>
+        <td>Desarrollador móvil</td>
+        <td>Estudiante desarrollador</td>
+        <td>Implementación de la app Flutter, navegación, UI y lógica de presentación.</td>
+      </tr>
+      <tr>
+        <td>Desarrollador backend</td>
+        <td>Estudiante desarrollador</td>
+        <td>Implementación de la API REST, lógica de negocio y acceso a datos.</td>
+      </tr>
+      <tr>
+        <td>QA / Pruebas</td>
+        <td>Equipo interno ULV</td>
+        <td>Diseño y ejecución de pruebas, reporte de defectos y validación de correcciones.</td>
+      </tr>
+      <tr>
+        <td>Usuario clave</td>
+        <td>Coordinador del programa EDI</td>
+        <td>Retroalimentación funcional, validación de requisitos y aceptación final.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="sec6">
+  <h2>6. Cronograma del proyecto</h2>
+  <p>
+    El cronograma se estructura en fases, adaptando las prácticas de planificación del documento de
+    referencia al contexto específico del proyecto EDI-301.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fase</th>
+        <th>Actividades principales</th>
+        <th>Duración estimada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1. Inicio y análisis</td>
+        <td>Requerimientos, entrevistas, revisión de procesos, prototipos iniciales.</td>
+        <td>2 semanas</td>
+      </tr>
+      <tr>
+        <td>2. Diseño técnico</td>
+        <td>Arquitectura del sistema, modelos de base de datos, diagramas UML.</td>
+        <td>1.5 semanas</td>
+      </tr>
+      <tr>
+        <td>3. Desarrollo backend</td>
+        <td>Implementación de API REST, endpoints, seguridad y validaciones.</td>
+        <td>3 semanas</td>
+      </tr>
+      <tr>
+        <td>4. Desarrollo frontend</td>
+        <td>Pantallas Flutter, navegación, manejo de estado, integración con API.</td>
+        <td>4 semanas</td>
+      </tr>
+      <tr>
+        <td>5. Pruebas</td>
+        <td>Pruebas unitarias, funcionales, de regresión y aceptación de usuario.</td>
+        <td>2 semanas</td>
+      </tr>
+      <tr>
+        <td>6. Documentación</td>
+        <td>Manual de usuario, manual de mantenimiento, reportes de pruebas, actualización de diseño.</td>
+        <td>1.5 semanas</td>
+      </tr>
+      <tr>
+        <td>7. Despliegue</td>
+        <td>Configuración de entornos, carga inicial de datos, capacitación básica.</td>
+        <td>1 semana</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Plazo total estimado</th>
+        <th colspan="2">≈ 15 semanas</th>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<section id="sec7">
+  <h2>7. Plan de comunicación</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de comunicación</th>
+        <th>Medio</th>
+        <th>Frecuencia</th>
+        <th>Participantes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Reunión de seguimiento</td>
+        <td>Google Meet / presencial</td>
+        <td>Semanal</td>
+        <td>Equipo de desarrollo y coordinador EDI</td>
+      </tr>
+      <tr>
+        <td>Revisión de avances técnicos</td>
+        <td>WhatsApp / correo electrónico</td>
+        <td>Diaria</td>
+        <td>Equipo técnico</td>
+      </tr>
+      <tr>
+        <td>Reporte de incidencias</td>
+        <td>GitHub Issues</td>
+        <td>Continuo</td>
+        <td>Desarrollo y QA</td>
+      </tr>
+      <tr>
+        <td>Aprobaciones de fase</td>
+        <td>Reunión formal / acta</td>
+        <td>Al cierre de cada fase</td>
+        <td>Coordinador EDI, equipo de desarrollo</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="sec8">
+  <h2>8. Plan de gestión de riesgos</h2>
+
+  <p>Los riesgos identificados para el proyecto EDI-301 se resumen a continuación:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Riesgo</th>
+        <th>Impacto</th>
+        <th>Probabilidad</th>
+        <th>Estrategia de mitigación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Retrasos por carga académica del equipo</td>
+        <td>Medio</td>
+        <td>Alta</td>
+        <td>Reajuste del cronograma, priorizar tareas críticas, planificación anticipada.</td>
+      </tr>
+      <tr>
+        <td>Fallas en API o base de datos</td>
+        <td>Alto</td>
+        <td>Media</td>
+        <td>Pruebas tempranas, monitoreo de logs, respaldos frecuentes.</td>
+      </tr>
+      <tr>
+        <td>Cambios tardíos en requerimientos</td>
+        <td>Alto</td>
+        <td>Media</td>
+        <td>Validar alcance al inicio, documentar cambios y evaluar impacto.</td>
+      </tr>
+      <tr>
+        <td>Problemas con dispositivos móviles y versiones de SO</td>
+        <td>Bajo</td>
+        <td>Media</td>
+        <td>Pruebas en varias versiones de Android/iOS y dispositivos de referencia.</td>
+      </tr>
+      <tr>
+        <td>Errores en almacenamiento o carga de imágenes</td>
+        <td>Medio</td>
+        <td>Media</td>
+        <td>Validar rutas, tamaños y formatos; realizar pruebas específicas de subida y descarga.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="sec9">
+  <h2>9. Plan de seguimiento y control</h2>
+  <p>
+    El avance del proyecto se controlará mediante herramientas de gestión y reuniones periódicas.
+  </p>
+  <ul>
+    <li>Uso de GitHub Projects para la gestión de tareas y tableros Kanban.</li>
+    <li>Control de versiones mediante flujo Git (main, dev, feature, hotfix, release).</li>
+    <li>Revisión semanal del avance contra el cronograma definido.</li>
+    <li>Aplicación de pruebas de regresión antes de cada liberación importante.</li>
+    <li>Documentación continua de cambios relevantes en el sistema.</li>
+  </ul>
+  <p>Los reportes de estado incluirán:</p>
+  <ul>
+    <li>Avance por fase y tareas completadas.</li>
+    <li>Riesgos activos y su estado de mitigación.</li>
+    <li>Incidencias abiertas y cerradas.</li>
+    <li>Versiones liberadas y despliegues realizados.</li>
+  </ul>
+</section>
+
+<section id="sec10">
+  <h2>10. Aprobación del proyecto</h2>
+  <p>
+    El presente documento constituye la base formal de gestión del proyecto EDI-301. Su aprobación
+    implica que:
+  </p>
+  <ul>
+    <li>El alcance del proyecto está claramente definido.</li>
+    <li>El cronograma es conocido y considerado alcanzable.</li>
+    <li>Los roles y recursos han sido asignados.</li>
+    <li>Los riesgos principales han sido identificados y tienen estrategias de mitigación.</li>
+    <li>El equipo reconoce sus responsabilidades y acuerdos de trabajo.</li>
+  </ul>
+  <p><strong>Firmas representativas (a completar):</strong></p>
+  <ul>
+    <li>Coordinador del Programa EDI.</li>
+    <li>Equipo de Desarrollo EDI-301.</li>
+    <li>Representante del área de TI de la Universidad Linda Vista.</li>
+  </ul>
+</section>
+
+</body>
+</html>
